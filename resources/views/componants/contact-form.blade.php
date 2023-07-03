@@ -46,7 +46,7 @@
     let element=document.getElementById('contactForm');
 
     element.addEventListener('submit',async(event)=>{
-        event.preventDefault();
+        event.preventDefault();//eta use korar karon holo browser without loading a data insert hobe mot ktha loading nibe na refresh dile
         let name=document.getElementById('name').value;
         // alert(name);
         let email =document.getElementById('email').value;

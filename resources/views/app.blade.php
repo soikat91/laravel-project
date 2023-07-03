@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset("favicon.ico") }}">
     <link rel="stylesheet" href="{{ asset("css/bootstrap.css") }}">
     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
+    <script src="{{ asset("js/axios.min.js") }}"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -23,7 +24,7 @@
 
 
     <script src="{{ asset("js/bootstrap.bundle.min.js") }}"></script>
-    <script src="{{ asset("js/axios.min.js") }}"></script>
+    
 
 </body>
 </html>
