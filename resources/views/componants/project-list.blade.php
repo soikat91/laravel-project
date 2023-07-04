@@ -15,15 +15,20 @@
 
 <script>
 
-     projectList();
-
+     projectList();//function call
     async function projectList(){
 
         let url='/projectsData';
 
           
           try{
+            document.getElementById('loading-div').classList.remove('d-none');//loader show
+            document.getElementById('content-div').classList.add('d-none');//content hide
+            // debugger;
             const response =await axios.get(url);
+            // debugger;
+            document.getElementById('loading-div').classList.add('d-none');//loader hide
+            document.getElementById('content-div').classList.remove('d-none');//content show
             response.data.forEach((item)=>{
 
                 document.getElementById('project-list').innerHTML+=(
