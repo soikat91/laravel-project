@@ -34,7 +34,7 @@
             let response=await axios.get(url);
             response.data.forEach((item)=>{
                 document.getElementById('educaton').innerHTML +=(`
-                <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                <div class="col  text-center text-lg-start mb-4 mb-lg-0">
                                 <div class="bg-light p-4 rounded-4">
                                     <div class="text-secondary fw-bolder mb-2">${item['duration']}</div>
                                     <div class="mb-2">
@@ -46,8 +46,9 @@
                                        
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-8"><div>${item['details']}</div></div>
+                            
+                            <div class="col-lg-8"><div>${item['details']}</div>
+                </div>
                 
                 `)
             })
